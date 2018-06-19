@@ -265,6 +265,10 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
+# Security
+BOOT_SECURITY_PATCH := 2021-11-18
+VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
 

@@ -16,6 +16,10 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     otapreopt_script
 
+# Fastboot
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Initialization
 PRODUCT_PACKAGES += \
     init.lahaina.recovery.rc

@@ -269,6 +269,10 @@ PRODUCT_PACKAGES += \
 BOOT_SECURITY_PATCH := 2021-11-18
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.0-service.multihal
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
 

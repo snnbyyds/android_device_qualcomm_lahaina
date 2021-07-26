@@ -165,10 +165,12 @@ PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     CellBroadcastReceiverResCommon \
     FrameworksResCommon \
+    FrameworksResTarget \
     SystemUIResCommon \
     TelecommResCommon \
     TelephonyResCommon \
-    WifiResCommon
+    WifiResCommon \
+    WifiResTarget
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

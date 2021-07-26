@@ -1,3 +1,6 @@
+# Adreno
+ro.hardware.egl=adreno
+
 # Bluetooth
 persist.sys.fflag.override.settings_bluetooth_hearing_aid=true
 persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false

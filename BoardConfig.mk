@@ -121,6 +121,7 @@ TARGET_NO_KERNEL := false
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/recovery.fstab
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 
 # Include the proprietary files BoardConfig.
 include vendor/qcom/lahaina/BoardConfigVendor.mk

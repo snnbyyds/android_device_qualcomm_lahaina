@@ -20,6 +20,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.lahaina.recovery.rc
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/recovery.fstab:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
+
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \

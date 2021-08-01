@@ -32,6 +32,11 @@ $(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/dis
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service
+
 # Initialization
 PRODUCT_PACKAGES += \
     init.lahaina.recovery.rc

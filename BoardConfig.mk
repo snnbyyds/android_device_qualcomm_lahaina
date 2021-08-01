@@ -62,6 +62,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 
 # Display
 TARGET_SCREEN_DENSITY := 480
+include hardware/qcom-caf/sm8350/display/config/display-board.mk
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \

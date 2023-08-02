@@ -115,6 +115,7 @@ TARGET_NO_KERNEL := false
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_USES_RECOVERY_AS_BOOT := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/recovery.fstab
 
 # Include the proprietary files BoardConfig.
 include vendor/qcom/lahaina/BoardConfigVendor.mk

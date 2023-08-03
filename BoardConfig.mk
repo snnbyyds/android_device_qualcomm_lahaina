@@ -112,6 +112,13 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/qcom/lahaina
 TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig
 
+# Kernel modules
+BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery))
+BOOT_KERNEL_MODULES := $(strip $(shell cat $(COMMON_PATH)/modules.include.recovery))
+TARGET_MODULE_ALIASES += wlan.ko:qca_cld3_wlan.ko
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x06000000
 BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4

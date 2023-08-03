@@ -134,7 +134,8 @@ $(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_
 
 PRODUCT_PACKAGES += \
     ipacm \
-    IPACM_cfg.xml
+    IPACM_cfg.xml \
+    librmnetctl
 
 # Display
 $(call inherit-product, hardware/qcom-caf/sm8350/display/config/display-product.mk)

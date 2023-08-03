@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- Copyright (c) 2014, 2016-2020, The Linux Foundation. All rights reserved.   -->
+<!-- Copyright (c) 2014, 2016-2021, The Linux Foundation. All rights reserved.   -->
 <!--                                                                        -->
 <!-- Redistribution and use in source and binary forms, with or without     -->
 <!-- modification, are permitted provided that the following conditions are -->
@@ -139,39 +139,6 @@
         <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES_EXTERNAL_1" acdb_id="10"/>
         <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES_EXTERNAL_2" acdb_id="10"/>
         <device name="SND_DEVICE_OUT_SPEAKER_AND_USB_HEADSET" acdb_id="45"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_USB_HEADSET_OUTDOOR" acdb_id="45"/>
-        <device name="SND_DEVICE_OUT_AFE_PROXY" acdb_id="800"/>
-        <device name="SND_DEVICE_OUT_VOIP_USB_HEADSET" acdb_id="310"/>
-        <device name="SND_DEVICE_OUT_VOIP_USB_HEADPHONES" acdb_id="310"/>
-        <device name="SND_DEVICE_OUT_VOIP_USB_HEADSET_3RD" acdb_id="311"/>
-        <device name="SND_DEVICE_OUT_VOIP_USB_HEADPHONES_3RD" acdb_id="311"/>
-        <device name="SND_DEVICE_OUT_VOIP_GAME_USB_HEADSET" acdb_id="713"/>
-        <device name="SND_DEVICE_OUT_VOIP_GAME_USB_HEADPHONES" acdb_id="713"/>
-        <device name="SND_DEVICE_OUT_VOIP_GAME_USB_HEADSET_3RD" acdb_id="714"/>
-        <device name="SND_DEVICE_OUT_VOIP_GAME_USB_HEADPHONES_3RD" acdb_id="714"/>
-        <device name="SND_DEVICE_OUT_USB_HEADSET_RINGTONE" acdb_id="70"/>
-        <device name="SND_DEVICE_OUT_USB_HEADSET_3RD_PARTY_SPKR" acdb_id="71"/>
-        <device name="SND_DEVICE_OUT_VOICE_USB_HEADSET_3RD" acdb_id="47"/>
-        <device name="SND_DEVICE_OUT_VOICE_USB_HEADPHONES_3RD" acdb_id="47"/>
-        <device name="SND_DEVICE_OUT_VOICE_USB_HEADSET" acdb_id="45"/>
-        <device name="SND_DEVICE_OUT_VOIP_HEADPHONES" acdb_id="502"/>
-        <device name="SND_DEVICE_OUT_VOIP_HEADSET" acdb_id="502"/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER" acdb_id="702"/>
-        <device name="SND_DEVICE_OUT_VOIP_GAME_SPEAKER" acdb_id="708"/>
-        <device name="SND_DEVICE_OUT_VOIP_HANDSET" acdb_id="302"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_GAME" acdb_id="787"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_OUTDOOR" acdb_id="95"/>
-        <device name="SND_DEVICE_OUT_BT_SCO_HD_440BT" acdb_id="939"/>
-        <device name="SND_DEVICE_OUT_BT_SCO_MI_BASIC" acdb_id="941"/>
-        <device name="SND_DEVICE_OUT_BT_SCO_HD_440BT_WB" acdb_id="939"/>
-        <device name="SND_DEVICE_OUT_BT_SCO_MI_BASIC_WB" acdb_id="941"/>
-        <device name="SND_DEVICE_OUT_HEADPHONES_RINGTONE" acdb_id="72"/>
-        <device name="SND_DEVICE_OUT_HEADPHONES_HIGH_IMP" acdb_id="503"/>
-        <device name="SND_DEVICE_OUT_HEADPHONES_FM" acdb_id="52"/>
-        <device name="SND_DEVICE_OUT_VOIP_GAME_HEADPHONES" acdb_id="711"/>
-        <device name="SND_DEVICE_OUT_VOIP_GAME_HEADSET" acdb_id="711"/>
-        <device name="SND_DEVICE_OUT_HEADPHONES_KARAOK" acdb_id="910"/>
-        <device name="SND_DEVICE_OUT_USB_HEADPHONES_KARAOK" acdb_id="945"/>
         <device name="SND_DEVICE_IN_UNPROCESSED_MIC" acdb_id="143"/>
         <device name="SND_DEVICE_IN_UNPROCESSED_STEREO_MIC" acdb_id="144"/>
         <device name="SND_DEVICE_IN_UNPROCESSED_THREE_MIC" acdb_id="145"/>
@@ -180,68 +147,22 @@
         <device name="SND_DEVICE_IN_HANDSET_GENERIC_QMIC" acdb_id="191"/>
         <device name="SND_DEVICE_IN_VOICE_HEARING_AID" acdb_id="11"/>
         <device name="SND_DEVICE_OUT_VOICE_HANDSET_TMUS" acdb_id="7"/>
-        <device name="SND_DEVICE_IN_VOICE_DMIC" acdb_id="41"/>
-        <device name="SND_DEVICE_IN_VOICE_DMIC_TMUS" acdb_id="41"/>
-        <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" acdb_id="42"/>
-        <device name="SND_DEVICE_IN_VOICE_HEADSET_MIC" acdb_id="8"/>
-        <device name="SND_DEVICE_IN_VOICE_USB_HEADSET_MIC" acdb_id="44"/>
-        <device name="SND_DEVICE_IN_MIC_3" acdb_id="4"/>
-        <device name="SND_DEVICE_IN_SPEAKER_MIC" acdb_id="4"/>
-        <device name="SND_DEVICE_IN_VOIP_HANDSET_DMIC" acdb_id="202"/>
-        <device name="SND_DEVICE_IN_VOIP_HEADSET_MIC" acdb_id="402"/>
-        <device name="SND_DEVICE_IN_VOIP_GAME_HEADSET_MIC" acdb_id="710"/>
-        <device name="SND_DEVICE_IN_VOIP_GAME_SPEAKER_MIC" acdb_id="709"/>
-        <device name="SND_DEVICE_IN_VOIP_SPEAKER_MIC" acdb_id="322"/>
-        <device name="SND_DEVICE_IN_CAMCORDER_HEADSET_MIC" acdb_id="401"/>
-        <device name="SND_DEVICE_IN_CAMCORDER_HEADSET_MIC_OZO" acdb_id="401"/>
-        <device name="SND_DEVICE_IN_CAMCORDER_USB_HEADSET_MIC" acdb_id="308"/>
-        <device name="SND_DEVICE_IN_UNPROCESSED_THREE_MIC" acdb_id="145"/>
-        <device name="SND_DEVICE_IN_CAMCORDER_INVERT_LANDSCAPE" acdb_id="48"/>
-        <device name="SND_DEVICE_IN_CAMCORDER_LANDSCAPE" acdb_id="34"/>
-        <device name="SND_DEVICE_IN_VOICE_REC_HEADSET_MIC" acdb_id="403"/>
-        <device name="SND_DEVICE_IN_VOICE_RECOG_USB_HEADSET_MIC" acdb_id="96"/>
-        <device name="SND_DEVICE_IN_HEADSET_MIC_NS" acdb_id="404"/>
-        <device name="SND_DEVICE_IN_USB_HEADSET_MIC_NS" acdb_id="44"/>
-        <device name="SND_DEVICE_IN_HANDSET_DMIC_STEREO" acdb_id="413"/>
-        <device name="SND_DEVICE_IN_HANDSET_DMIC_STEREO_SCREEN_RECORD" acdb_id="414"/>
-        <device name="SND_DEVICE_IN_HEADSET_MIC_SCREEN_RECORDER" acdb_id="405"/>
-        <device name="SND_DEVICE_IN_USB_HEADSET_MIC_SCREEN_RECORDER" acdb_id="54"/>
-        <device name="SND_DEVICE_IN_HEADSET_MIC_GAME" acdb_id="718"/>
-        <device name="SND_DEVICE_IN_USB_HEADSET_MIC_GAME" acdb_id="744"/>
-        <device name="SND_DEVICE_IN_HEADSET_MIC_KARAOK" acdb_id="901"/>
-        <device name="SND_DEVICE_IN_USB_HEADSET_MIC_KARAOK" acdb_id="908"/>
-        <device name="SND_DEVICE_IN_BT_SCO_HD_440BT_MIC" acdb_id="938"/>
-        <device name="SND_DEVICE_IN_BT_SCO_MI_BASIC_MIC" acdb_id="940"/>
-        <device name="SND_DEVICE_IN_BT_SCO_HD_440BT_MIC_WB" acdb_id="938"/>
-        <device name="SND_DEVICE_IN_BT_SCO_MI_BASIC_MIC_WB" acdb_id="940"/>
-        <device name="SND_DEVICE_IN_VOIP_USB_HEADSET_MIC" acdb_id="309"/>
-        <device name="SND_DEVICE_IN_VOIP_GAME_USB_HEADSET_MIC" acdb_id="44"/>
-        <device name="SND_DEVICE_IN_VOIP_GAME_SPEAKER_TMIC" acdb_id="709"/>
-        <device name="SND_DEVICE_IN_HANDSET_DMIC" acdb_id="47"/>
-        <device name="SND_DEVICE_IN_SPEAKER_MIC_SCREEN_RECORDER" acdb_id="11"/>
+        <device name="SND_DEVICE_IN_UNPROCESSED_USB_HEADSET_MIC" acdb_id="133"/>
+        <device name="SND_DEVICE_IN_BT_A2DP" acdb_id="201"/>
     </acdb_ids>
     <backend_names>
         <device name="SND_DEVICE_OUT_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_VOIP_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_HEADPHONES_HIGH_IMP" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_HEADPHONES_FM" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_HEADPHONES_HIFI_FILTER" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_HEADPHONES_44_1" backend="headphones-44.1" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_BT_SCO_WB" backend="bt-sco-wb" interface="SLIMBUS_7_RX"/>
         <device name="SND_DEVICE_OUT_BT_SCO" backend="bt-sco" interface="SLIMBUS_7_RX"/>
-        <device name="SND_DEVICE_OUT_BT_SCO_HD_440BT" backend="bt-sco" interface="SLIMBUS_7_RX"/>
-        <device name="SND_DEVICE_OUT_BT_SCO_MI_BASIC" backend="bt-sco" interface="SLIMBUS_7_RX"/>
-        <device name="SND_DEVICE_OUT_BT_SCO_HD_440BT_WB" backend="bt-sco-wb" interface="SLIMBUS_7_RX"/>
-        <device name="SND_DEVICE_OUT_BT_SCO_MI_BASIC_WB" backend="bt-sco-wb" interface="SLIMBUS_7_RX"/>
         <device name="SND_DEVICE_OUT_BT_A2DP" backend="bt-a2dp" interface="SLIMBUS_7_RX"/>
         <device name="SND_DEVICE_OUT_LINE" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_ANC_HEADSET" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_USB_HEADSET_OUTDOOR" backend="speaker-and-usb-headphones" interface="PRI_MI2S_RX-and-USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_USB_HEADSET" backend="speaker-and-usb-headphones" interface="PRI_MI2S_RX-and-USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" backend="speaker-and-headphones" interface="PRI_MI2S_RX-and-RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES_OUTDOOR" backend="speaker-and-headphones" interface="PRI_MI2S_RX-and-RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_LINE" backend="speaker-and-headphones" interface="PRI_MI2S_RX-and-RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_ANC_HEADSET" backend="speaker-and-headphones" interface="PRI_MI2S_RX-and-RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" backend="speaker-and-headphones" interface="WSA_CDC_DMA_RX_0-and-RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES_HIFI_FILTER" backend="speaker-and-headphones" interface="WSA_CDC_DMA_RX_0-and-RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_LINE" backend="speaker-and-headphones" interface="WSA_CDC_DMA_RX_0-and-RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_ANC_HEADSET" backend="speaker-and-headphones" interface="WSA_CDC_DMA_RX_0-and-RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_VOICE_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_VOICE_HEADSET" backend="headset" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_VOICE_ANC_HEADSET" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
@@ -249,67 +170,43 @@
         <device name="SND_DEVICE_OUT_VOICE_TTY_FULL_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_VOICE_TTY_FULL_HEADSET" backend="headset" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_VOICE_TTY_VCO_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_HANDSET" backend="handset" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_EXTERNAL_1" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_EXTERNAL_2" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_REVERSE" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_VBAT" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_SAFE" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES_EXTERNAL_1" interface="PRI_MI2S_RX-and-RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES_EXTERNAL_2" interface="PRI_MI2S_RX-and-RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_VOICE_HANDSET" backend="handset" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_HANDSET_TMUS" backend="handset" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_HAC_HANDSET" backend="handset" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_TTY_VCO_HEADSET" backend="headset" interface="RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_HANDSET" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_EXTERNAL_1" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_EXTERNAL_2" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_REVERSE" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_VBAT" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES_EXTERNAL_1" interface="WSA_CDC_DMA_RX_0-and-RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES_EXTERNAL_2" interface="WSA_CDC_DMA_RX_0-and-RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_HANDSET" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_HANDSET_TMUS" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_HAC_HANDSET" interface="WSA_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_IN_HANDSET_GENERIC_QMIC" interface="TX_CDC_DMA_TX_3"/>
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_STEREO" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_VBAT" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2_VBAT" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_HDMI" interface="PRI_MI2S_RX-and-HDMI"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_DISPLAY_PORT" interface="PRI_MI2S_RX-and-DISPLAY_PORT"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_A2DP" backend="speaker-and-bt-a2dp" interface="PRI_MI2S_RX-and-SLIMBUS_7_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_A2DP_OUTDOOR" backend="speaker-and-bt-a2dp" interface="PRI_MI2S_RX-and-SLIMBUS_7_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_TTY_HCO_HANDSET" backend="voice-tty-hco-handset" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_TTY_HCO_HANDSET_WIRED" backend="voice-tty-hco-handset-wired" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_STEREO" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_STEREO_VBAT" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_VBAT" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2_VBAT" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_HDMI" interface="WSA_CDC_DMA_RX_0-and-HDMI"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_DISPLAY_PORT" interface="WSA_CDC_DMA_RX_0-and-DISPLAY_PORT"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_A2DP" interface="WSA_CDC_DMA_RX_0-and-SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_TTY_HCO_HANDSET" interface="WSA_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_ANC_FB_HEADSET" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_VOICE_ANC_FB_HEADSET" interface="RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_ANC_HANDSET" backend="handset" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_PROTECTED" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_PROTECTED" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2_PROTECTED" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_STEREO_PROTECTED" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_PROTECTED_VBAT" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_PROTECTED_VBAT" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2_PROTECTED_VBAT" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_WSA" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_WSA" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2_WSA" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_USB_HEADSET" backend="usb-headset" interface="USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_USB_HEADPHONES" backend="usb-headphones" interface="USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_USB_HEADSET_RINGTONE" backend="usb-headset" interface="USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_GAME_USB_HEADSET" backend="usb-headset" interface="USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_GAME_USB_HEADPHONES" backend="usb-headphones" interface="USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_GAME_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_VOIP_GAME_HEADSET" backend="headset" interface="RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_HEADPHONES_KARAOK" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_USB_HEADPHONES_KARAOK" backend="usb-headphones" interface="USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_USB_HEADSET_3RD" backend="usb-headset" interface="USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_USB_HEADPHONES_3RD" backend="usb-headphones" interface="USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_USB_HEADSET_3RD" backend="usb-headset" interface="USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_USB_HEADPHONES_3RD" backend="usb-headphones" interface="USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_GAME_USB_HEADSET_3RD" backend="usb-headset" interface="USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_GAME_USB_HEADPHONES_3RD" backend="usb-headphones" interface="USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_USB_HEADSET_3RD_PARTY_SPKR" backend="usb-headset" interface="USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_HEADSET" backend="headset" interface="RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_HANDSET" backend="handset" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOIP_GAME_SPEAKER" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_GAME" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_OUTDOOR" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_HEADPHONES_RINGTONE" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_VOIP_LINE" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_ANC_HANDSET" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_PROTECTED" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_PROTECTED" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2_PROTECTED" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_STEREO_PROTECTED" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_STEREO_PROTECTED_VBAT" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_PROTECTED_VBAT" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_PROTECTED_VBAT" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2_PROTECTED_VBAT" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_WSA" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_WSA" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2_WSA" interface="WSA_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_IN_HANDSET_MIC" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_HANDSET_MIC_SB" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_HANDSET_MIC_EXTERNAL" interface="TX_CDC_DMA_TX_3"/>
@@ -324,7 +221,6 @@
         <device name="SND_DEVICE_IN_HANDSET_MIC_NS_NN" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_HANDSET_MIC_AEC_NS_NN" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_HANDSET_DMIC" interface="TX_CDC_DMA_TX_3"/>
-        <device name="SND_DEVICE_IN_SPEAKER_MIC_SCREEN_RECORDER" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC_SB" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_HANDSET_DMIC_NS" interface="TX_CDC_DMA_TX_3"/>
@@ -332,9 +228,7 @@
         <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC_NS" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC_NS_SB" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_HANDSET_DMIC_STEREO" interface="TX_CDC_DMA_TX_3"/>
-        <device name="SND_DEVICE_IN_HANDSET_DMIC_STEREO_SCREEN_RECORD" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_VOICE_DMIC_TMUS" interface="TX_CDC_DMA_TX_3"/>
-        <device name="SND_DEVICE_IN_MIC_3" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_SPEAKER_MIC" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_SPEAKER_MIC_SB" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_SPEAKER_MIC_AEC" interface="TX_CDC_DMA_TX_3"/>
@@ -370,10 +264,6 @@
         <device name="SND_DEVICE_IN_BT_SCO_MIC_NREC" interface="SLIMBUS_7_TX"/>
         <device name="SND_DEVICE_IN_BT_SCO_MIC_WB" interface="SLIMBUS_7_TX"/>
         <device name="SND_DEVICE_IN_BT_SCO_MIC_WB_NREC" interface="SLIMBUS_7_TX"/>
-        <device name="SND_DEVICE_IN_BT_SCO_HD_440BT_MIC" backend="bt-sco" interface="SLIMBUS_7_TX"/>
-        <device name="SND_DEVICE_IN_BT_SCO_MI_BASIC_MIC" backend="bt-sco" interface="SLIMBUS_7_TX"/>
-        <device name="SND_DEVICE_IN_BT_SCO_HD_440BT_MIC_WB" backend="bt-sco-wb" interface="SLIMBUS_7_TX"/>
-        <device name="SND_DEVICE_IN_BT_SCO_MI_BASIC_MIC_WB" backend="bt-sco-wb" interface="SLIMBUS_7_TX"/>
         <device name="SND_DEVICE_IN_CAMCORDER_MIC" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_VOICE_DMIC" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_VOICE_DMIC_SB" interface="TX_CDC_DMA_TX_3"/>
@@ -387,6 +277,8 @@
         <device name="SND_DEVICE_IN_VOICE_REC_DMIC_FLUENCE" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_AANC_HANDSET_MIC" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_QUAD_MIC" interface="TX_CDC_DMA_TX_3"/>
+        <device name="SND_DEVICE_IN_HANDSET_STEREO_DMIC" interface="TX_CDC_DMA_TX_3"/>
+        <device name="SND_DEVICE_IN_SPEAKER_STEREO_DMIC" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK" interface="WSA_CDC_DMA_TX_0"/>
         <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK_MONO_1" interface="WSA_CDC_DMA_TX_0"/>
         <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK_MONO_2" interface="WSA_CDC_DMA_TX_0"/>
@@ -412,32 +304,12 @@
         <device name="SND_DEVICE_IN_UNPROCESSED_STEREO_MIC" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_UNPROCESSED_THREE_MIC" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_UNPROCESSED_QUAD_MIC" interface="TX_CDC_DMA_TX_3"/>
-        <device name="SND_DEVICE_IN_UNPROCESSED_HEADSET_MIC" interface="TX_CDC_DMA_TX_3"/>
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_AND_VOICE_HEADPHONES" backend="speaker-and-headphones" interface="PRI_MI2S_RX-and-RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_AND_VOICE_ANC_HEADSET" backend="speaker-and-headphones" interface="PRI_MI2S_RX-and-RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO" backend="speaker-and-bt-sco" interface="PRI_MI2S_RX-and-SLIMBUS_7_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO_WB" backend="speaker-and-bt-sco-wb" interface="PRI_MI2S_RX-and-SLIMBUS_7_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO_SWB" backend="speaker-and-bt-sco-swb" interface="PRI_MI2S_RX-and-SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_AND_VOICE_HEADPHONES" backend="speaker-and-headphones" interface="WSA_CDC_DMA_RX_0-and-RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_AND_VOICE_ANC_HEADSET" backend="speaker-and-headphones" interface="WSA_CDC_DMA_RX_0-and-RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO" backend="speaker-and-bt-sco" interface="WSA_CDC_DMA_RX_0-and-SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO_WB" backend="speaker-and-bt-sco-wb" interface="WSA_CDC_DMA_RX_0-and-SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO_SWB" backend="speaker-and-bt-sco-swb" interface="WSA_CDC_DMA_RX_0-and-SLIMBUS_7_RX"/>
         <device name="SND_DEVICE_OUT_HEADPHONES_DSD" backend="headphones-dsd" interface="RX_CDC_DMA_RX_5"/>
-        <device name="SND_DEVICE_IN_VOIP_HANDSET_DMIC" interface="TX_CDC_DMA_TX_3"/>
-        <device name="SND_DEVICE_IN_VOIP_HEADSET_MIC" backend="headset-mic" interface="TX_CDC_DMA_TX_4"/>
-        <device name="SND_DEVICE_IN_VOIP_GAME_HEADSET_MIC" backend="headset-mic" interface="TX_CDC_DMA_TX_4"/>
-        <device name="SND_DEVICE_IN_VOIP_GAME_SPEAKER_MIC" interface="TX_CDC_DMA_TX_3"/>
-        <device name="SND_DEVICE_IN_VOIP_SPEAKER_MIC" interface="TX_CDC_DMA_TX_3"/>
-        <device name="SND_DEVICE_IN_CAMCORDER_HEADSET_MIC" backend="headset-mic" interface="TX_CDC_DMA_TX_4"/>
-        <device name="SND_DEVICE_IN_CAMCORDER_HEADSET_MIC_OZO" backend="headset-mic" interface="TX_CDC_DMA_TX_4"/>
-        <device name="SND_DEVICE_IN_CAMCORDER_USB_HEADSET_MIC" backend="usb-headset-mic" interface="USB_AUDIO_TX"/>
-        <device name="SND_DEVICE_IN_HEADSET_MIC_NS" backend="headset-mic" interface="TX_CDC_DMA_TX_4"/>
-        <device name="SND_DEVICE_IN_USB_HEADSET_MIC_NS" backend="usb-headset-mic" interface="USB_AUDIO_TX"/>
-        <device name="SND_DEVICE_IN_HEADSET_MIC_SCREEN_RECORDER" backend="headset-mic" interface="TX_CDC_DMA_TX_4"/>
-        <device name="SND_DEVICE_IN_USB_HEADSET_MIC_SCREEN_RECORDER" backend="usb-headset-mic" interface="USB_AUDIO_TX"/>
-        <device name="SND_DEVICE_IN_HEADSET_MIC_GAME" backend="headset-mic" interface="TX_CDC_DMA_TX_4"/>
-        <device name="SND_DEVICE_IN_USB_HEADSET_MIC_GAME" backend="usb-headset-mic" interface="USB_AUDIO_TX"/>
-        <device name="SND_DEVICE_IN_HEADSET_MIC_KARAOK" backend="headset-mic" interface="TX_CDC_DMA_TX_4"/>
-        <device name="SND_DEVICE_IN_USB_HEADSET_MIC_KARAOK" backend="usb-headset-mic" interface="USB_AUDIO_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_USB_HEADSET_MIC" backend="usb-headset-mic" interface="USB_AUDIO_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_GAME_USB_HEADSET_MIC" backend="usb-headset-mic" interface="USB_AUDIO_TX"/>
-        <device name="SND_DEVICE_IN_VOIP_GAME_SPEAKER_TMIC" interface="TX_CDC_DMA_TX_3"/>
     </backend_names>
     <!-- below values are for ref purpose to OEM, doesn't contain actual hardware info on MTP -->
     <microphone_characteristics>

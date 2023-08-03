@@ -1,3 +1,0 @@
-# Battery
-allow kernel battery_file:dir rw_dir_perms;
-allow kernel battery_file:file create_file_perms;

@@ -1,2 +1,0 @@
-# Allow audio HAL access to CS35L45 calibration files.
-allow hal_audio_default mnt_vendor_file:file create_file_perms;

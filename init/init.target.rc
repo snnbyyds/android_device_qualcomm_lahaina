@@ -92,6 +92,7 @@ on post-fs
 on late-fs
     wait_for_prop hwservicemanager.ready true
     #exec_start wait_for_keymaster
+    start console
     mount_all --late
 
 on post-fs-data
@@ -101,7 +102,6 @@ on post-fs-data
 
 on early-boot
     start vendor.sensors
-    verity_update_state
 
 on boot
     write /dev/cpuset/audio-app/cpus 1-2

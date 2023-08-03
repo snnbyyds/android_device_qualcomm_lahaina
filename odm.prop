@@ -10,7 +10,6 @@ ro.vendor.audio.sdk.fluencetype=fluence
 vendor.audio.spkr_prot.tx.sampling_rate=0
 
 # Camera
-vendor.camera.asus.system=1
 vendor.camera.cam5.crop_region=2:0,0,4032,3024;3:728,546,3304,2478
 vendor.camera.expTimeMax=0
 
@@ -28,4 +27,4 @@ persist.vendor.radio.data_ltd_sys_ind=1
 persist.vendor.radio.rat_on=none
 
 # USB
-vendor.usb.product_string=Zenfone 8
+vendor.usb.product_string=Lahaina for arm64

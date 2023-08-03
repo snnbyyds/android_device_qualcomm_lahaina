@@ -5,7 +5,7 @@
 #
 
 # Inherit from our proprietary files directory.
-$(call inherit-product, vendor/asus/sake/sake-vendor.mk)
+$(call inherit-product, vendor/qcom/lahaina/lahaina-vendor.mk)
 
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
@@ -96,13 +96,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.authsecret@1.0.vendor
 
-# Biometrics
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
-
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.sake
-
 # Bluetooth
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
@@ -139,10 +132,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-service_64 \
     vendor.qti.hardware.camera.postproc@1.0.vendor
-
-# Dirac
-PRODUCT_PACKAGES += \
-    ASUSDiracGef
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -196,10 +185,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
-# Fastcharge
-PRODUCT_PACKAGES += \
-    vendor.lineage.fastcharge@1.0-service.sake
-
 # GPS
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
@@ -225,22 +210,33 @@ PRODUCT_PACKAGES += \
 
 # Initialization
 PRODUCT_PACKAGES += \
-    fstab.battery \
+    charger_fw_fstab.qti \
     fstab.default \
-    fstab.default.vendor_ramdisk \
-    init.asus.rc \
-    init.asus.recovery.rc \
-    init.asus.usb.rc \
     init.class_main.sh \
+    init.crda.sh \
+    init.mdm.sh \
+    init.qcom.class_core.sh \
+    init.qcom.coex.sh \
     init.qcom.early_boot.sh \
+    init.qcom.efs.sync.sh \
+    init.qcom.post_boot.sh \
     init.qcom.rc \
+    init.qcom.sdio.sh \
     init.qcom.sh \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh \
-    init.sake.rc \
+    init.qti.kernel.rc \
+    init.qti.kernel.sh \
+    init.qti.write.sh \
+    init.recovery.qcom.rc \
     init.target.rc \
-    ueventd.asus.rc \
-    ueventd.qcom.rc
+    init.veth_ipa_config.sh \
+    qca6234-service.sh \
+    system_dlkm_modprobe.sh \
+    ueventd.qcom.rc \
+    vendor_modprobe.sh
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/init/lahaina,$(TARGET_COPY_OUT_VENDOR))
 
 # Keymaster
 PRODUCT_COPY_FILES += \
@@ -248,10 +244,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
-
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -291,7 +283,7 @@ PRODUCT_USES_ESE := false
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    kernel/asus/sm8350
+    kernel/qcom/lahaina
 
 # Networking
 PRODUCT_PACKAGES += \
@@ -307,20 +299,14 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
+    CellBroadcastReceiverResCommon \
     FrameworksResCommon \
     FrameworksResTarget \
     SystemUIResCommon \
+    TelecommResCommon \
     TelephonyResCommon \
     WifiResCommon \
-    WifiResTarget \
-    Zenfone8Frameworks \
-    Zenfone8LineageSDK \
-    Zenfone8LineageSettings \
-    Zenfone8LineageSystemUI \
-    Zenfone8Settings \
-    Zenfone8SettingsProvider \
-    Zenfone8SystemUI \
-    Zenfone8Telephony
+    WifiResTarget
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -331,12 +317,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
-
-# Permissions
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/hiddenapi-package-allowlist-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/asus-hiddenapi-package-allowlist.xml \
-    $(LOCAL_PATH)/privapp-permissions-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-asus.xml \
-    $(LOCAL_PATH)/privapp-permissions-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-asus.xml
 
 # Power
 PRODUCT_PACKAGES += \
@@ -360,7 +340,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor
 
 # Security
-BOOT_SECURITY_PATCH := 2023-05-05
+BOOT_SECURITY_PATCH := 2021-11-18
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # Sensors
@@ -378,8 +358,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.multihal \
-    libsensorndkbridge \
-    sensors.sake
+    libsensorndkbridge
 
 # Service Tracker
 PRODUCT_PACKAGES += \
@@ -425,10 +404,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.sake
-
 # TrustedUI
 PRODUCT_PACKAGES += \
     android.hidl.memory.block@1.0.vendor
@@ -460,7 +435,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator.service.sake
+    android.hardware.vibrator.service.lahaina
 
 # WFD
 PRODUCT_BOOT_JARS += \

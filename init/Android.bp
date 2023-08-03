@@ -1,39 +1,12 @@
 //
-// Copyright (C) 2021-2022 The LineageOS Project
+// Copyright (C) 2023 The LineageOS Project
 // SPDX-License-Identifier: Apache-2.0
 //
 
 prebuilt_etc {
-    name: "fstab.battery",
-    src: "fstab.battery",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "fstab.default",
-    src: "fstab.default",
-    vendor: true,
-    vendor_ramdisk_available: true,
-}
-
-prebuilt_etc {
-    name: "init.asus.rc",
-    src: "init.asus.rc",
-    sub_dir: "init",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.asus.recovery.rc",
-    src: "init.asus.recovery.rc",
-    sub_dir: "init",
-    recovery: true,
-}
-
-prebuilt_etc {
-    name: "init.asus.usb.rc",
-    src: "init.asus.usb.rc",
-    sub_dir: "init",
+    name: "init.qcom.legacy.rc",
+    src: "init.qcom.legacy.rc",
+    sub_dir: "init/hw",
     vendor: true,
 }
 
@@ -45,24 +18,17 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.sake.rc",
-    src: "init.sake.rc",
-    sub_dir: "init",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.target.rc",
-    src: "init.target.rc",
+    name: "init.qti.kernel.rc",
+    src: "init.qti.kernel.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
-    name: "ueventd.asus.rc",
-    filename: "ueventd.rc",
-    src: "ueventd.asus.rc",
-    device_specific: true,
+    name: "init.recovery.qcom.rc",
+    src: "init.recovery.qcom.rc",
+    sub_dir: "init",
+    recovery: true,
 }
 
 prebuilt_etc {
@@ -73,9 +39,9 @@ prebuilt_etc {
 }
 
 prebuilt_hidl_interfaces {
-    name: "hidl_bspcam_interface",
+    name: "hidl_netperftuner_interface",
     interfaces: [
-        "vendor.asus.bspcam@1.0::IAsusBspCameraInterface",
+        "vendor.qti.hardware.wigig.netperftuner@1.0::INetPerfTuner",
     ],
 }
 
@@ -86,13 +52,85 @@ sh_binary {
 }
 
 sh_binary {
+    name: "init.crda.sh",
+    src: "init.crda.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.mdm.sh",
+    src: "init.mdm.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qcom.class_core.sh",
+    src: "init.qcom.class_core.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qcom.coex.sh",
+    src: "init.qcom.coex.sh",
+    vendor: true,
+}
+
+sh_binary {
     name: "init.qcom.early_boot.sh",
     src: "init.qcom.early_boot.sh",
     vendor: true,
 }
 
 sh_binary {
+    name: "init.qcom.efs.sync.sh",
+    src: "init.qcom.efs.sync.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qcom.post_boot.sh",
+    src: "init.qcom.post_boot.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qcom.sdio.sh",
+    src: "init.qcom.sdio.sh",
+    vendor: true,
+}
+
+sh_binary {
     name: "init.qcom.sh",
     src: "init.qcom.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qti.kernel.sh",
+    src: "init.qti.kernel.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qti.write.sh",
+    src: "init.qti.write.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.veth_ipa_config.sh",
+    src: "init.veth_ipa_config.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "qca6234-service.sh",
+    src: "qca6234-service.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "vendor_modprobe.sh",
+    src: "vendor_modprobe.sh",
     vendor: true,
 }

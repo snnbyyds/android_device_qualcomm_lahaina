@@ -1,25 +1,44 @@
 Common_CFlags = ["-Wall"]
 Common_CFlags += ["-Werror"]
 
+cc_library_shared {
+    name: "vendor.qti.hardware.vibrator.impl.lahaina",
+    vendor: true,
+    cflags: Common_CFlags,
+    srcs: [
+        "Vibrator.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libcutils",
+        "libutils",
+        "liblog",
+        "libqtivibratoreffect",
+        "libbinder_ndk",
+        "android.hardware.vibrator-ndk",
+    ],
+    export_include_dirs: ["include"]
+}
+
 cc_binary {
-    name: "android.hardware.vibrator.service.sake",
+    name: "vendor.qti.hardware.vibrator.service.lahaina",
     vendor: true,
     relative_install_path: "hw",
-    init_rc: ["android.hardware.vibrator.service.sake.rc"],
+    init_rc: ["vendor.qti.hardware.vibrator.service.lahaina.rc"],
     vintf_fragments: [
-        "android.hardware.vibrator.service.sake.xml",
+        "vendor.qti.hardware.vibrator.service.lahaina.xml",
     ],
     cflags: Common_CFlags,
     srcs: [
         "service.cpp",
-        "Vibrator.cpp",
     ],
     shared_libs: [
         "libcutils",
         "libutils",
-        "liblog",
         "libbase",
         "libbinder_ndk",
-        "android.hardware.vibrator-V1-ndk",
+        "android.hardware.vibrator-ndk",
+        "vendor.qti.hardware.vibrator.impl.lahaina",
     ],
+    overrides: ["vendor.qti.hardware.vibrator.service"],
 }

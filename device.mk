@@ -145,7 +145,7 @@ PRODUCT_PACKAGES += \
     vendor_modprobe.sh
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init/recovery.fstab:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default \
+    $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/init/lahaina,$(TARGET_COPY_OUT_VENDOR))
 
 # Keymaster

@@ -156,8 +156,11 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/recovery.fstab
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 
-# Include the proprietary files BoardConfig.
-include vendor/qcom/lahaina/BoardConfigVendor.mk
+# SELinux
+include device/qcom/sepolicy_vndr/SEPolicy.mk
+
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    $(DEVICE_PATH)/sepolicy/vendor
 
 # WLAN
 BOARD_HAS_QCOM_WLAN := true
@@ -173,3 +176,6 @@ CONFIG_ACS := true
 CONFIG_IEEE80211AC := true
 CONFIG_IEEE80211AX := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
+
+# Include the proprietary files BoardConfig.
+include vendor/qcom/lahaina/BoardConfigVendor.mk

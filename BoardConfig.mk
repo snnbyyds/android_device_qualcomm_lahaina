@@ -18,18 +18,15 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Architecture
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-a
+TARGET_ARCH_VARIANT := armv8-2a-dotprod
 TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_ABI2 := 
-TARGET_CPU_VARIANT := generic
-TARGET_CPU_VARIANT_RUNTIME := kryo300
+TARGET_CPU_VARIANT := cortex-a76
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv7-a-neon
+TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := generic
-TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
+TARGET_2ND_CPU_VARIANT := cortex-a76
 
 # APEX
 OVERRIDE_TARGET_FLATTEN_APEX := true
@@ -38,9 +35,14 @@ OVERRIDE_TARGET_FLATTEN_APEX := true
 TARGET_BOOTLOADER_BOARD_NAME := lahaina
 TARGET_NO_BOOTLOADER := true
 
+# Hacks
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # Kernel
 BOARD_BOOTIMG_HEADER_VERSION := 3
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=0 loop.max_part=7 cgroup.memory=nokmem,nosocket pcie_ports=compat loop.max_part=7 iptable_raw.raw_before_defrag=1 ip6table_raw.raw_before_defrag=1 buildvariant=userdebug
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image
@@ -88,6 +90,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-08-01
+
+# SELinux
+include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 
 # Verified Boot
 BOARD_AVB_ENABLE := true

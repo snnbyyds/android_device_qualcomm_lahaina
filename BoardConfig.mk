@@ -123,22 +123,17 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_VENDOR_KERNEL_MODULES_LOAD := \
     adsp_loader_dlkm.ko \
     apr_dlkm.ko \
-    aw8697.ko \
     bolero_cdc_dlkm.ko \
     bt_fm_slim.ko \
     btpower.ko \
     camera.ko \
-    cs35l45_i2c_dlkm.ko \
     e4000.ko \
     fc0011.ko \
     fc0012.ko \
     fc0013.ko \
     fc2580.ko \
-    focaltech_fts_zf.ko \
-    gf_spi.ko \
     hdmi_dlkm.ko \
     hid-aksys.ko \
-    icm206xx.ko \
     it913x.ko \
     llcc_perfmon.ko \
     m88rs6000t.ko \
@@ -168,16 +163,12 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := \
     qm1d1c0042.ko \
     qt1010.ko \
     r820t.ko \
+    radio-i2c-rtc6226-qca.ko \
     rdbg.ko \
-    rmnet_core.ko \
-    rmnet_ctl.ko \
-    rmnet_offload.ko \
-    rmnet_shs.ko \
     rx_macro_dlkm.ko \
-    sensors_vcnl36866.ko \
     si2157.ko \
-    slimbus.ko \
     slimbus-ngd.ko \
+    slimbus.ko \
     snd_event_dlkm.ko \
     stub_dlkm.ko \
     swr_ctrl_dlkm.ko \
@@ -205,7 +196,14 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := \
     wsa883x_dlkm.ko \
     wsa_macro_dlkm.ko \
     xc4000.ko \
-    xc5000.ko
+    xc5000.ko \
+    qca_cld3_wlan.ko \
+    qca_cld3_qca6750.ko \
+    qca_cld3_qca6390.ko \
+    rmnet_core.ko \
+    rmnet_ctl.ko \
+    rmnet_offload.ko \
+    rmnet_shs.ko
 
 TARGET_MODULE_ALIASES += wlan.ko:qca_cld3_wlan.ko
 
@@ -257,6 +255,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOOT_KERNEL_MODULES := \
+    adsp_loader_dlkm.ko \
     msm_drm.ko
 
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)

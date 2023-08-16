@@ -301,3 +301,11 @@ prebuilt_etc {
     src: "etc/fstab.default",
     vendor: true,
 }
+
+// ueventd
+prebuilt_etc {
+    name: "ueventd.qcom.rc",
+    filename: "ueventd.rc",
+    src: "etc/ueventd.qcom.rc",
+    vendor: true,
+}

@@ -71,9 +71,6 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_BOOT_HEADER_VERSION := 3
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
 
-# DTBO
-BOARD_KERNEL_SEPARATED_DTBO := true
-
 # Display
 TARGET_SCREEN_DENSITY := 480
 
@@ -120,101 +117,35 @@ BOARD_KERNEL_CMDLINE := \
 
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
-BOARD_VENDOR_KERNEL_MODULES_LOAD := \
-    adsp_loader_dlkm.ko \
-    apr_dlkm.ko \
-    bolero_cdc_dlkm.ko \
-    bt_fm_slim.ko \
-    btpower.ko \
-    camera.ko \
-    e4000.ko \
-    fc0011.ko \
-    fc0012.ko \
-    fc0013.ko \
-    fc2580.ko \
-    hdmi_dlkm.ko \
-    hid-aksys.ko \
-    it913x.ko \
-    llcc_perfmon.ko \
-    m88rs6000t.ko \
-    machine_dlkm.ko \
-    max2165.ko \
-    mbhc_dlkm.ko \
-    mc44s803.ko \
-    msi001.ko \
-    msm_drm.ko \
-    mt2060.ko \
-    mt2063.ko \
-    mt20xx.ko \
-    mt2131.ko \
-    mt2266.ko \
-    mxl301rf.ko \
-    mxl5005s.ko \
-    mxl5007t.ko \
-    native_dlkm.ko \
-    pinctrl_lpi_dlkm.ko \
-    pinctrl_wcd_dlkm.ko \
-    platform_dlkm.ko \
-    q6_dlkm.ko \
-    q6_notifier_dlkm.ko \
-    q6_pdr_dlkm.ko \
-    qcom_edac.ko \
-    qm1d1b0004.ko \
-    qm1d1c0042.ko \
-    qt1010.ko \
-    r820t.ko \
-    radio-i2c-rtc6226-qca.ko \
-    rdbg.ko \
-    rx_macro_dlkm.ko \
-    si2157.ko \
-    slimbus-ngd.ko \
-    slimbus.ko \
-    snd_event_dlkm.ko \
-    stub_dlkm.ko \
-    swr_ctrl_dlkm.ko \
-    swr_dlkm.ko \
-    swr_dmic_dlkm.ko \
-    swr_haptics_dlkm.ko \
-    tda18212.ko \
-    tda18218.ko \
-    tda18250.ko \
-    tda9887.ko \
-    tea5761.ko \
-    tea5767.ko \
-    tua9001.ko \
-    tuner-simple.ko \
-    tuner-types.ko \
-    tuner-xc2028.ko \
-    tx_macro_dlkm.ko \
-    va_macro_dlkm.ko \
-    wcd937x_dlkm.ko \
-    wcd937x_slave_dlkm.ko \
-    wcd938x_dlkm.ko \
-    wcd938x_slave_dlkm.ko \
-    wcd9xxx_dlkm.ko \
-    wcd_core_dlkm.ko \
-    wsa883x_dlkm.ko \
-    wsa_macro_dlkm.ko \
-    xc4000.ko \
-    xc5000.ko \
-    qca_cld3_wlan.ko \
-    qca_cld3_qca6750.ko \
-    qca_cld3_qca6390.ko \
-    rmnet_core.ko \
-    rmnet_ctl.ko \
-    rmnet_offload.ko \
-    rmnet_shs.ko
-
-TARGET_MODULE_ALIASES += wlan.ko:qca_cld3_wlan.ko
-
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_OFFSET := 0x01000000
+BOARD_KERNEL_SECOND_OFFSET := 0x00f00000
+BOARD_KERNEL_TAGS_OFFSET := 0x00000100
+BOARD_KERNEL_OFFSET := 0x00008000
+BOARD_DTB_OFFSET := 0x01f00000
 
+BOARD_KERNEL_SEPARATED_DTBO := true
+
+TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_CONFIG := vendor/lahaina_defconfig
 TARGET_KERNEL_SOURCE := kernel/qualcomm/lahaina
 TARGET_KERNEL_NO_GCC := true
+
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)-kernel/kernel # automatically copied
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)-kernel/dtb.img # for mkbootimg only
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img # automatically copied
+TARGET_FORCE_PREBUILT_KERNEL := true # dont really build with our imcomplete "source"
+
+BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
+BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE)
+BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --kernel_offset $(BOARD_KERNEL_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --second_offset $(BOARD_KERNEL_SECOND_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 # Partitions
 BOARD_QUALCOMM_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext product vendor odm
@@ -254,11 +185,6 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
-BOOT_KERNEL_MODULES := \
-    adsp_loader_dlkm.ko \
-    msm_drm.ko
-
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.default
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 100

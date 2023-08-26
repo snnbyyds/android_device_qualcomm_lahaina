@@ -335,21 +335,29 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.default \
     fstab.default.vendor_ramdisk \
-    init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh \
+    init.aospa.perf.rc \
     init.class_main.sh \
     init.crda.sh \
     init.mdm.sh \
     init.qcom.class_core.sh \
     init.qcom.coex.sh \
+    init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \
+    init.qcom.legacy.rc \
+    init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.sdio.sh \
     init.qcom.sh \
+    init.qti.kernel.rc \
+    init.qti.kernel.sh \
+    init.qti.write.sh \
     init.recovery.qcom.rc \
+    init.target.rc \
     init.veth_ipa_config.sh \
     qca6234-service.sh \
-    ueventd.qcom.rc
+    system_dlkm_modprobe.sh \
+    ueventd.qcom.rc \
+    vendor_modprobe.sh
 
 # Security
 BOOT_SECURITY_PATCH := 2021-08-01

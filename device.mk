@@ -320,70 +320,23 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor
 
 # Rootdir
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
-
 PRODUCT_PACKAGES += \
+    fstab.default \
+    fstab.default.vendor_ramdisk \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
     init.class_main.sh \
     init.crda.sh \
-    init.kernel.post_boot-lahaina.sh \
-    init.kernel.post_boot-shima.sh \
-    init.kernel.post_boot-yupik.sh \
-    init.kernel.post_boot.sh \
     init.mdm.sh \
     init.qcom.class_core.sh \
     init.qcom.coex.sh \
-    init.qcom.debug-sdm660.sh \
-    init.qcom.debug-sdm710.sh \
-    init.qcom.debug.sh \
-    init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \
-    init.qcom.post_boot.sh \
+    init.qcom.rc \
     init.qcom.sdio.sh \
     init.qcom.sh \
-    init.qcom.usb.sh \
-    init.qti.chg_policy.sh \
-    init.qti.debug-atoll.sh \
-    init.qti.debug-bengal.sh \
-    init.qti.debug-khaje.sh \
-    init.qti.debug-kona.sh \
-    init.qti.debug-lito.sh \
-    init.qti.debug-msmnile-apps.sh \
-    init.qti.debug-msmnile-modem.sh \
-    init.qti.debug-msmnile-slpi.sh \
-    init.qti.debug-msmnile.sh \
-    init.qti.debug-talos.sh \
-    init.qti.debug-trinket.sh \
-    init.qti.display_boot.sh \
-    init.qti.kernel.debug-lahaina.sh \
-    init.qti.kernel.debug-shima.sh \
-    init.qti.kernel.debug-yupik.sh \
-    init.qti.kernel.debug.sh \
-    init.qti.kernel.sh \
-    init.qti.keymaster.sh \
-    init.qti.media.sh \
-    init.qti.qcv.sh \
-    init.qti.ufs.debug.sh \
-    init.qti.usb.debug.sh \
-    qca6234-service.sh \
-    vendor_modprobe.sh
-
-PRODUCT_PACKAGES += \
-    fstab.default \
-    init.qcom.factory.rc \
-    init.qcom.rc \
-    init.qcom.test.rc \
-    init.qcom.usb.rc \
-    init.qti.kernel.rc \
-    init.qti.kernel.test.rc \
-    init.qti.ufs.rc \
-    init.target.rc \
-    init.recovery.hlthchrg.rc \
-    init.recovery.ldconfig.rc \
-    init.recovery.logd.rc \
     init.recovery.qcom.rc \
-    init.recovery.service.rc \
-    init.recovery.usb.rc \
+    init.veth_ipa_config.sh \
+    qca6234-service.sh \
     ueventd.qcom.rc
 
 # Security

@@ -773,6 +773,9 @@ vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 
 # Charger
+vendor/bin/init.qti.chg_policy.sh
+vendor/etc/charger_fstab.qti
+vendor/etc/charger_fw_fstab.qti
 vendor/bin/hvdcp_opti
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/etc/charger_fstab.qti
@@ -1381,6 +1384,10 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 
+# Init
+vendor/bin/init.kernel.post_boot-lahaina.sh
+vendor/bin/init.kernel.post_boot.sh
+
 # IPA
 vendor/etc/init/ipa_fws.rc
 
@@ -1582,6 +1589,7 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
 # QCV
+vendor/bin/init.qti.qcv.sh
 vendor/etc/init/init.qti.qcv.rc
 
 # QMI - from LA.QSSI.13.0.r1-10000.02-qssi.0

@@ -300,7 +300,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Prebuilt Kernel
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)-kernel/dtb.img:dtb.img \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)-kernel/modules,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)-kernel/modules/1.1,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
 
 PRODUCT_PACKAGES += \
     lahaina_kernel_recovery

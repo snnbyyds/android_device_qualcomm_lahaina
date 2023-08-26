@@ -187,6 +187,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Fs
+PRODUCT_PACKAGES += \
+    e2fsck_ramdisk \
+    resize2fs_ramdisk \
+    tune2fs_ramdisk
+
+PRODUCT_PACKAGES += \
+    e2fsck.recovery \
+    resize2fs.recovery \
+    tune2fs.recovery
+
 # GPS
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
